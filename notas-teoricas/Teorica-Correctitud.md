@@ -6,11 +6,27 @@
   Notación: **wp(S,Q)**
 * Teorema: 
   Una tripla de Hoare {P}S{Q} es válida si y sólo si:
-   **P =>L wp(S,Q)**
+   **P =><sub>L</sub> wp(S,Q)**
 * para demostrar la validez de {P}S{Q} nos alcanza con
-probar la fórmula: P ⇒L wp(S, Q)
+probar la fórmula: P ⇒<sub>L</sub> wp(S, Q)
   *Necesitamos un mecanismo para hallar la wp(S,Q)*
 * Dada una expresión E, llamamos **def(E)** a las
 condiciones necesarias para que E este definida.
- Ej: def(x/y) ≡ def(x) ∧ (def(y) ∧L y ̸= 0).
- 
+ Ej: def(x/y) ≡ def(x) ∧ (def(y) ∧<sub>L</sub> y ̸= 0).
+ * Dado un predicado Q, el predicado Q<sub>E</sub><sup>x</sup> reemplaza todas las variables x por E en Q.
+* *Aignacion de elementos en una secuencia b*: b[i] := E se escribe como: 
+  b = setAt(b, i, E)
+* **Corolario de la monotonia**: Si:
+                         P ⇒ wp(S1, Q), 
+                         Q ⇒ wp(S2, R),
+entonces
+▶ P ⇒ wp(S1; S2, R).
+
+#### Axiomas
+* **Axioma 1** (Asignación) : Dado un programa S: x:= E, 
+  Ax1 = wp(S,Q) = def(x=E) ^<sub>L</sub> Q<sub>E</sub><sup>x</sup>
+* **Axioma 2** : wp(skip,Q) = Q
+*  **Axioma 3**  : wp(S1,S2,Q) = wp(S1,wp(S2,Q))
+*  **Axioma 4** : Dado un programa S: if B then S1 else S2,
+   wp(S1,Q) = def(B) ^<sub>L</sub> ((def(B) ^ wp(S1,Q)) v (def(B) ^ wp(S2,Q)))
+
