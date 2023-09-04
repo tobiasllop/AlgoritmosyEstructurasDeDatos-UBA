@@ -17,11 +17,10 @@ condiciones necesarias para que E este definida.
 * *Aignacion de elementos en una secuencia b*: b[i] := E se escribe como: 
   b = setAt(b, i, E)
 * **Corolario de la monotonia**: Si:
-  
-                         P ⇒ wp(S1, Q), 
 
+                         P ⇒ wp(S1, Q), 
                          Q ⇒ wp(S2, R), e
-                         entonces P ⇒ wp(S1; S2, R).
+                         entonces:  P ⇒ wp(S1; S2, R).
 
 #### Axiomas
 * **Axioma 1** (Asignación) : Dado un programa S: x:= E, 
