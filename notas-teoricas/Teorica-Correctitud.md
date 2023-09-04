@@ -19,9 +19,8 @@ condiciones necesarias para que E este definida.
 * **Corolario de la monotonia**: Si:
                          P ⇒ wp(S1, Q), 
                          Q ⇒ wp(S2, R),
-entonces
 
-▶ P ⇒ wp(S1; S2, R).
+entonces P ⇒ wp(S1; S2, R).
 
 #### Axiomas
 * **Axioma 1** (Asignación) : Dado un programa S: x:= E, 
