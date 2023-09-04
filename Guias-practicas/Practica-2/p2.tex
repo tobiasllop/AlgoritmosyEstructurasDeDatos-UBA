@@ -1,0 +1,36 @@
+\documentclass{article}
+
+% Language setting
+% Replace `english' with e.g. `spanish' to change the document language
+\usepackage[english]{babel}
+\usepackage{braket}
+% Set page size and margins
+% Replace `letterpaper' with `a4paper' for UK/EU standard size
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+% Useful packages
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\usepackage{amssymb}
+
+\title{Algoritmos y estructuras de datos
+       \\ Departamento de computación UBA}
+
+\author{Tobias Llop}
+\date{}
+
+\begin{document}
+\maketitle
+\setcounter{section}{1}
+\section{Práctica 2 - Resoluciones}
+\subsection{Ejercicio 1}
+
+\paragraph{(a)} \( \texttt{esCuadrado}(x:\mathbb{Z}) = \) \{\( (\exists n : \mathbb{Z})(n * n = x) \)\}
+\paragraph{(b)} \( \texttt{esPrimo}(x:\mathbb{Z}) = \) {\  \(x > 1\) \(\land \) \(\lnot\)(\(\exists m : \mathbb{Z})(1 < m < x) \: \land_L \: x \mod m = 0\) \}
+\paragraph{(c)} \( \texttt{sonCoPrimos}(x:\mathbb{Z}, y:\mathbb{Z}) = \) \{\( x \neq y \: \land esPrimo(x) \land esPrimo(y)\)\}
+
+\subsection{Ejercicio 2}
+\paragraph{(a)} \( \texttt{esPrefijo}(l: Seq\braket{\mathbb{Z}}, \: s: Seq\braket{\mathbb{Z}}) = \) \{\( |l| \leq |s| \: \land_L (\forall i : \mathbb{Z})(0 \leq i < |l| \: \land l[i] = s[i])\)\}
+
+\end{document}
