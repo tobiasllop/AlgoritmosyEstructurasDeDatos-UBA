@@ -40,6 +40,40 @@ a \(\in \mathbb{R}\), b \(\in \mathbb{R}\), i \(\in \mathbb{Z}\), A: seq\(\brake
 \paragraph{(c)} wp(\textbf{a := A[i] + 1, a := b*b}, a \(\geq 0 \)) = def(A[i] + 1) \(\land_L\) def(b * b)  \(\land_L \: b^2 \geq 0\) \\ \\
 \setlength{\parindent}{59mm}\indent wp = \((\forall i:\mathbb{Z})(0 \leq i < |A| )   \land_L\) true \(\land_L\) true \\ \\
 \setlength{\parindent}{59mm}\indent wp = \((\forall i:\mathbb{Z})(0 \leq i < |A| )\)
-\\ *Preguntar
 
+\subsection{Ejercicio 3}
+Q = \((\forall j:\mathbb{Z})(0 \leq j < |A| \rightarrow_L A[j] \geq 0) \), i \(\in \mathbb{Z}\), A: seq\(\braket{\mathbb{R}}\) 
+\paragraph{(a)} wp(\textbf{A[i] := 0}, Q) =  wp(A := setAt(A, i, 0), Q)\\ \\
+\setlength{\parindent}{32mm}\indent wp = ((def(A) \(\land\) def(i)) \(\land_L \: 0 \leq i \leq |A|)  \land_L\) def(0) \(\land_L\) \\ 
+\setlength{\parindent}{42mm}\indent \((\forall j:\mathbb{Z})(0 \leq j < |\)setAt(A, i, 0)\(|  \rightarrow_L \) setAt(A, i, 0)[j] \(\geq 0) \) \\
+\setlength{\parindent}{32mm}\indent wp = \((0 \leq i \leq |A|) \: \land_L\) \((\forall j:\mathbb{Z})(0 \leq j < |\)A\(| \land j \neq i)  \rightarrow_L \) setAt(A, i, 0)[j] \(\geq 0) \)
+
+\[ 
+       setAt(A, i, 0)[j] = \begin{cases} 0 & \text{si } i = j \\
+                                        A[j] & \text{si } i \neq j 
+                            \end{cases}
+\]
+\\
+Luego.. \\
+\setlength{\parindent}{32mm}\indent wp = \((0 \leq i \leq |A|) \: \land_L\) \((\forall j:\mathbb{Z})(0 \leq j < |\)A\(| \land j \neq i  \rightarrow_L \) A[j] \(\geq 0) \land 0 \geq 0\) \\
+\setlength{\parindent}{32mm}\indent wp = \((0 \leq i \leq |A|) \: \land_L\) \((\forall j:\mathbb{Z})(0 \leq j < |\)A\(| \land j \neq i  \rightarrow_L \) A[j] \(\geq 0)\) \\
+
+
+\setlength{\parindent}{0mm}\indent*Preguntar, decir que lo hice copiando las diapos de la practica del TM, pero que no entiendo porque el j \( \neq \) i
+
+\paragraph{(d)} wp(\textbf{A[i] := 2 * A[i]}, Q) =  wp(A := setAt(A, i, 2 * A[i]), Q)\\ \\
+\setlength{\parindent}{43mm}\indent wp = ((def(A) \(\land\) def(i)) \(\land_L \: 0 \leq i \leq |A|) \: \land_L\) def(2*A[i]) \(\land_L \: (0 \leq i \leq |A|)\)\\ 
+\setlength{\parindent}{49mm}\indent \(\land_L \: (\forall j:\mathbb{Z})(0 \leq j < |\)setAt(A, i, 2* A[i])\(|  \rightarrow_L \) setAt(A, i, 2*A[i])[j] \(\geq 0) \) \\ \\
+\setlength{\parindent}{43mm}\indent wp = \((0 \leq i \leq |A|) \: \land_L\)\( (\forall j:\mathbb{Z})(0 \leq j < |\)A\(|\land \:i \neq j  \rightarrow_L \) A[j] \(\geq 0) \land A[i] \geq 0\)  \\ 
+
+\setlength{\parindent}{0mm}\indent*Hice lo mismo que en el anterior pero creo que no hace falta el j \( \neq \) i
+
+\subsection{Ejercicio 4}
+None
+\subsection{Ejercicio 5}
+\paragraph{(b)} S2 :  a := a - s[0]\\
+\setlength{\parindent}{9mm}\indent Q : \{a = \(\sum\limits_{j=1}^{i} s[j]\)  \} \\
+\\\setlength{\parindent}{9mm}\indent wp(S2,Q) = def(a - s[0]) \( \land_L\) (a - s[0] = \(\sum\limits_{j=1}^{i} s[j] )\)
+\\\setlength{\parindent}{9mm}\indent wp(S2,Q) = \( (\: 0 \leq i < |s| \:) \: \land_L \) (a = \(\sum\limits_{j=0}^{i} s[j])\)
+\\ *Preguntar si esta bien el def(a - s[0]) 
 \end{document}
