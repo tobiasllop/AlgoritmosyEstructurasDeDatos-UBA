@@ -1,0 +1,45 @@
+\documentclass{article}
+
+% Language setting
+% Replace `english' with e.g. `spanish' to change the document language
+\usepackage[english]{babel}
+\usepackage{braket}
+% Set page size and margins
+% Replace `letterpaper' with `a4paper' for UK/EU standard size
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+% Useful packages
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\usepackage{amssymb}
+
+\title{Algoritmos y estructuras de datos
+       \\ Departamento de computación UBA}
+
+\author{Tobias Llop}
+\date{}
+
+\begin{document}
+\maketitle
+\setcounter{section}{2}
+\section{Práctica 3 - Resoluciones}
+\subsection{Ejercicio 1} 
+
+\paragraph{(a)} def(a+1) = def(a)
+\paragraph{(b)} def(a/b) = def(a) \(\land\) (def(b) \(\land_L\) b \(\neq\) 0) 
+\paragraph{(c)} def(\( \sqrt{\frac{a}{b}}\)) = (def(a) \(\land\) (def(b) \(\land_L\) b \(\neq\) 0)) \( \land_L\) ((a \(>0 \: \land \) b \(>0\)) \( \lor \) (a \(<0 \: \land \) b \(<0\)))
+
+\subsection{Ejercicio 2}
+a \(\in \mathbb{R}\), b \(\in \mathbb{R}\), i \(\in \mathbb{Z}\), A: seq\(\braket{\mathbb{R}}\) 
+
+\paragraph{(a)} wp(\textbf{a := a + 1, b := a/2}, b \(\geq 0 \)) = def(a + 1) \(\land_L\) def(a/2)  \(\land_L \: \frac{a+1}{2} \geq 0\) \\ \\
+\setlength{\parindent}{59mm}\indent wp =  true \(\land_L\) true \(\land_L \: a+1 \geq 0\) \\ \\
+\setlength{\parindent}{59mm}\indent wp = \( a \geq -1\)
+
+\paragraph{(c)} wp(\textbf{a := A[i] + 1, a := b*b}, a \(\geq 0 \)) = def(A[i] + 1) \(\land_L\) def(b * b)  \(\land_L \: b^2 \geq 0\) \\ \\
+\setlength{\parindent}{59mm}\indent wp = \((\forall i:\mathbb{Z})(0 \leq i < |A| )   \land_L\) true \(\land_L\) true \\ \\
+\setlength{\parindent}{59mm}\indent wp = \((\forall i:\mathbb{Z})(0 \leq i < |A| )\)
+\\ *Preguntar
+
+\end{document}
