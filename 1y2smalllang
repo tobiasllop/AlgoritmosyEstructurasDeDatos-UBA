@@ -1,0 +1,60 @@
+ListaPorcentajes =
+	  i:= 0
+	  suma := 0
+	  res := s.copy()
+	  while (i < s.size()) do
+	  	suma := suma + s[i]
+	  	i:= i + 1
+	 endwhile
+	 i:= 0
+	 while (i < s.size()) do
+	     res[i] := (s[i] * 100) / suma
+	     i := i + 1
+	 endwhile    
+
+hayBallotage = 
+	     i:= 0
+	     res := true
+	     j:= 0
+	     lista_porc := listaPorcentajes(escrutinio)
+	     while (i < lista_porc.size()) do
+	     	if lista_porc[i] > 45 then
+	     		res := false
+	     	endif
+	     	if lista_porc[i] <= 45 and lista_porc[i] > 40 then
+	     			while (j < lista_porc.size()) do
+	     				if lista_porc[i] - 10 > lista_porc[j] then
+	     				 		res := false
+	     				endif
+	     				j := j + 1
+	     			endwhile
+	     	 endif
+	     	 i:=i+1
+	     endwhile
+
+hayFraude(escrutinioPres, escrutinioSen, escrutinioDip) =
+	p := 0
+	s := 0
+	d := 0
+	votosPresidente := 0
+	votosSenador := 0
+	votosDiputado := 0
+	while p < escrutinioPres.size() do
+		votosPresidente = votosPresidente + escrPres(p)
+		p = p+1
+		
+	while s < escrutinioSenador.size() do
+		votosSenador = votosSenador + escrSen(s)
+		s = s+1
+		
+	while d < escrutinioDiputado.size() do
+		votosDiputado = votosDiputado + escrDipu(d)
+		d = d+1
+		
+	if (votosDiputado = votosSenador) and (votosDiputado = votosPresidente) then
+		res := True
+	else
+		res := False
+	return res
+	   
+	      
