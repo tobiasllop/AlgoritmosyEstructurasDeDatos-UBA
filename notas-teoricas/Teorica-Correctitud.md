@@ -28,5 +28,5 @@ condiciones necesarias para que E este definida.
 * **Axioma 2** : wp(skip,Q) = Q
 *  **Axioma 3**  : wp(S1,S2,Q) = wp(S1,wp(S2,Q))
 *  **Axioma 4** : Dado un programa S: if B then S1 else S2,
-   wp(S1,Q) = def(B) ^<sub>L</sub> ((def(B) ^ wp(S1,Q)) v (def(B) ^ wp(S2,Q)))
+   wp(S,Q) = def(B) ^<sub>L</sub> ((def(B) ^ wp(S1,Q)) v (def(B) ^ wp(S2,Q)))
 
