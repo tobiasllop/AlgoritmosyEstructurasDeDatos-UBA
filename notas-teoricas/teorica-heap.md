@@ -28,23 +28,26 @@ Operación de costo: constante O(1)
 
 Subir(elemento): 
 
-                         while (elemento no es raiz) y_L (prioridad(padre(elemento))> prioridad(padre(elemento))):
-                              intercambiar elemento con el padre 
+    while (elemento no es raiz) y_L (prioridad(padre(elemento))> prioridad(padre(elemento))):
+      intercambiar elemento con el padre 
 * **Desencolar**: 
   - Reemplazar el primer elemento con la última hoja y eliminar la última hoja. Luego implementamos la operación bajar(raíz).
   
   Bajar(p):
-                         while (p no es hoja) y_L (prioridad(p)< prioridad(algun hijo de p)):
-                              intercambiar p con el hijo de mayor prioridad
 
+      while (p no es hoja) y_L (prioridad(p)< prioridad(algun hijo de p)):
+         intercambiar p con el hijo de mayor prioridad
+  
 * Tanto para encolar como para desencolar, el costo es proporcional a la altura del heap que es O(log n)
 
 ## Array2Heap
 Dado un array arr, lo transforma en un array que representa un heap a través de una permutación de sus elementos.
 
 * Algoritmo simple:
-                          para i desde 1 hasta tam(arr):
-                              encolar(arr[i]);
+
+      para i desde 1 hasta tam(arr):
+          encolar(arr[i]);
+
 Costo *O*(n log n)
 
 * Algoritmo de Floyd
