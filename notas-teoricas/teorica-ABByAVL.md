@@ -36,7 +36,7 @@ el nuevo nodo es una hoja
 2. Recalcular los factores de balanceo que
 cambiaron por la inserción
 sólo en la rama en la que ocurrió la inserción (los otros
-factores no pueden cambiar!), de abajo hacia arriba3. 
+factores no pueden cambiar!), de abajo hacia arriba
 3. Si en la rama aparece un factor de balanceo de
 ±2 hay que rebalancear
 A través de “rotaciones”
