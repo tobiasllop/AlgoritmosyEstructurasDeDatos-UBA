@@ -3,7 +3,7 @@
 #### Teorema del invariante
 Si existe un predicado $I$ tal que:
 1. $P_c \implies I $ 
-2. $\{I \land B\}$S$\{I\}$
+2. { $I \land B$ }S{ $I$ }
 3. $I \land B \implies Q_c$
  
 entonces el ciclo **while($B$) S** es parcialmente correcto respecto de la especificación ($P_c, Q_c$).
