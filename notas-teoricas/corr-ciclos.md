@@ -13,4 +13,4 @@ Sea $\mathbb{V}$ el producto cartesiano de los dominios de las variables del pro
 1.  { $I \land B \land v_0 = f_v$ } S { $f_v < v_0$ }
 2.  $I \land f_v \leq 0 \implies \neg B$,
 
-**Teorema**: Si  se cumple el teorema de terminación y el teorema del invariante, entonces el ciclo es correcto y la siguiente tripla de Hoare es valida: {$P_c$} **while B do S endwhile** {$Q_c$}
+**Teorema**: Si  se cumple el teorema de terminación y el teorema del invariante, entonces el ciclo es correcto y la siguiente tripla de Hoare es valida: { $P_c$ } **while B do S endwhile** { $Q_c$ }
