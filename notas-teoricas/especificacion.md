@@ -15,8 +15,8 @@
    * salida (out)
    * entrada-salida (inout)
 * Tipos de datos:
-    * Enteros ($\Z$)
-    * Reales ($\R$)
+    * Enteros ($\mathbb{Z}$)
+    * Reales ($\mathbb{R}$)
     * Booleanos (bool)
     * Caracteres (char)
     * Enumerados
@@ -24,17 +24,17 @@
     * Secuencias
     * Conjuntos
 * Funciones y predicados auxiliares
-    * $\texttt{aux f(argumentos): tipo = e;} $
+    * $\texttt{aux f(argumentos): tipo = e;}$
     * $\texttt{pred p(argumentos)\{f\}}$
 * Operaciones sobre secuencias
-  *  length(a: seq$\langle T\rangle$): $\Z$ (notación |a|)
-  *  indexación: seq$\langle T\rangle$[ i : $\Z$] : $T$
-  *  igualdad: seq$\langle T \rangle$ = seq$\langle T \rangle$
-  *  head(a: seq$\langle T \rangle$) : $T$
-  *  tail(a: seq$\langle T \rangle$) : $T$
-  *  addfirst(t: $T$, a: seq$\langle T \rangle$): seq$\langle T \rangle $
-  *  concat(a: seq$\langle T \rangle$, b: seq$\langle T \rangle$): seq$\langle T \rangle$. (notación a++b)
-  *  subseq(a: seq$\langle T \rangle$, d,h: $\Z$): seq$\langle T \rangle$ 
-  *  setAt(a: seq$\langle T \rangle$, i: $\Z$, val: $T$): seq$\langle T \rangle$
+  *  length(a: seq $\langle T\rangle$ ): $\mathbb{Z}$ (notación |a|)
+  *  indexación: seq $\langle T\rangle$[ i : $\mathbb{Z}$ ] : $T$
+  *  igualdad: seq $\langle T \rangle$ = seq $\langle T \rangle$
+  *  head(a: seq $\langle T \rangle$) : $T$
+  *  tail(a: seq $\langle T \rangle$) : $T$
+  *  addfirst(t: $T$, a: seq $\langle T \rangle$ ): seq $\langle T \rangle$
+  *  concat(a: seq $\langle T \rangle$ , b: seq $\langle T \rangle$ ): seq $\langle T \rangle$ . (notación a++b)
+  *  subseq(a: seq $\langle T \rangle$ , d,h: $\mathbb{Z}$ ): seq $\langle T \rangle$ 
+  *  setAt(a: seq $\langle T \rangle$ , i: $\mathbb{Z}$ , val: $T$): seq $\langle T \rangle$
 * En el lenguaje de especificación también se pueden usar sumatorias($\sum$) y productorias($\prod$)
 * Matriz: es una secuencia de secuencias, todas con la misma longitud y ninguna vacía.
