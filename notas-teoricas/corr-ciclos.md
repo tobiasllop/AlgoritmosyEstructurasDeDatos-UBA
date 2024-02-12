@@ -9,7 +9,7 @@ Si existe un predicado $I$ tal que:
 entonces el ciclo **while($B$) S** es parcialmente correcto respecto de la especificación ($P_c, Q_c$).
 
 #### Teorema de terminación de un ciclo
-Sea $\mathbb{V}$ el producto cartesiano de los dominios de las variables del programa y sea $I$ un invariante del ciclo **while B do S endwhile**. Si existe una funcion $f_v: \mathbb{V} \rightarrow \Z$ tal que: 
+Sea $\mathbb{V}$ el producto cartesiano de los dominios de las variables del programa y sea $I$ un invariante del ciclo **while B do S endwhile**. Si existe una funcion $f_v: \mathbb{V} \rightarrow \mathbb{Z}$ tal que: 
 1.  { $I \land B \land v_0 = f_v$ } S { $f_v < v_0$ }
 2.  $I \land f_v \leq 0 \implies \neg B$,
 
