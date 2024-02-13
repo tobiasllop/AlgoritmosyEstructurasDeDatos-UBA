@@ -13,7 +13,7 @@ Costo del borrado de un nodo interno: O(n)
 ## AVL
 Es un arbol k-ario, i.e cada nodo tiene 0 o k hijos. Además la longitud de dos ramas cualesquiera difiere a lo sumo en una unidad.
 
-**Teo**: Un arbol perfectamente balanceado de n nodos tiene altura log_2 n + 1
+**Teo**: Un arbol perfectamente balanceado de n nodos tiene altura $log_2$ n + 1
 
 Costo de búsqueda/inserción/borrado = O(log n)
 
