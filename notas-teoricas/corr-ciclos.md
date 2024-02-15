@@ -2,8 +2,8 @@
 
 #### Teorema del invariante
 Si existe un predicado $I$ tal que:
-1. $P_c \implies I $ 
-2. { $I \land B$ }S{ $I$ }
+1. $P_c \implies I $ ("El invariante se cumple antes de iniciar un ciclo")
+2. { $I \land B$ }S{ $I$ } = $I \land B \implies wp(S,I)$ ("Ejecutar el cuerpo del ciclo preserva el invariante")
 3. $I \land B \implies Q_c$
  
 entonces el ciclo **while($B$) S** es parcialmente correcto respecto de la especificación ($P_c, Q_c$).
