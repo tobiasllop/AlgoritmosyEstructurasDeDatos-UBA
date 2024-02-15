@@ -11,8 +11,7 @@ Si existe un predicado $I$ tal que:
   ("Ejecutar el cuerpo del ciclo preserva el invariante")
   
 3. $I \land B \implies Q_c$
-  
-   ("El invariante y la guarda implican la postCondicion del ciclo")
+  ("El invariante y la guarda implican la postCondicion del ciclo")
  
 entonces el ciclo **while($B$) S** es parcialmente correcto respecto de la especificación ($P_c, Q_c$).
 
