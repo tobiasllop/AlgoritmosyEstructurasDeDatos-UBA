@@ -1,6 +1,8 @@
 # Especificacion
 
 * Una **Especificación** es un contrato entre el programador de una función y el usuario de esa función.
+* Una **Implementacion** es la descripción de la solución a un problema planteado por la especificación escrita para ser ejecutada por una computadora
+* Un **Algoritmo** es la descripción de la solución escrita para humanos
   
   
 * Partes de una especificación:
