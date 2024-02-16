@@ -1,9 +1,9 @@
 # Especificacion
 
-* Una **Especificación** es un contrato entre el programador de una función y el usuario de esa función.
-* Una **Implementacion** es la descripción de la solución a un problema planteado por la especificación escrita para ser ejecutada por una computadora
-* Un **Algoritmo** es la descripción de la solución escrita para humanos
-  
+* Una **Especificación** es un contrato entre el programador de una función y el usuario de esa función. Es la descripción de un problema.
+* Una **Programa** es la descripción de la solución a un problema escrita para ser ejecutada por una computadora.
+* Un **Algoritmo** es la descripción de la solución escrita para humanos.
+* Una **Implementación** es la ejecución de un programa en una computadora  
   
 * Partes de una especificación:
     * Encabezado
@@ -16,7 +16,8 @@
    * entrada (in)
    * salida (out)
    * entrada-salida (inout)
-* Tipos de datos:
+* Un **tipo de datos** es un conjunto de valores (el conjunto base del tipo) provisto de una serie de operaciones que involucran a esos valores.
+* Tipos de datos: 
     * Enteros ($\mathbb{Z}$)
     * Reales ($\mathbb{R}$)
     * Booleanos (bool)
