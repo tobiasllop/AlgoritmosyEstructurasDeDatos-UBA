@@ -9,5 +9,6 @@ parte de un problema
 ● Se manipula a través de operaciones, que describimos mediante un lenguaje de especificación (lógica) con pre y postcondición
 
 #### Diseño de Tads
-* **Invariante de representación** : El invariante de representación es un predicado que nos indica qué conjuntos de valores son instancias válidas de la implementación.
-* **Función de abstracción** : La función de abstracción nos va a indicar, dada una instancia de implementación, a qué instancia del TAD corresponde, a qué instancia del TAD representa, qué instancia del TAD “es su abstracción”.
+* **Invariante de representación** : El invariante de representación es un predicado que nos indica qué conjuntos de valores son instancias válidas de la implementación. Se tiene que cumplir siempre al entrar y al salir de todas las operaciones (en la pre y en la post). Toma un sólo parámetro: el módulo.
+* **Función de abstracción** : La función de abstracción nos va a indicar, dada una instancia de implementación, a qué instancia del TAD corresponde, a qué instancia del TAD representa, qué instancia del TAD “es su abstracción”. La función de abstracción hace referencia a las variables de estado de la 
+implementación y a los observadores del TAD (porque tiene que vincular unas con otros). Para definirla, se puede suponer que vale el invariante de representación.
