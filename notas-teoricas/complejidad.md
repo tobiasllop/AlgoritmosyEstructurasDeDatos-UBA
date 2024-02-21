@@ -31,6 +31,6 @@ El objetivo del estudio de la complejidad algorítmica es determinar el comporta
 
 **Medidas de comportamiento asintótico de la complejidad**:
 * $O$ (O grande) cota superior.
-* $\omega$ cota inferior.
-* $\theta$ orden exacto de la función.
+* $\Omega$ cota inferior.
+* $\Theta$ orden exacto de la función.
 
