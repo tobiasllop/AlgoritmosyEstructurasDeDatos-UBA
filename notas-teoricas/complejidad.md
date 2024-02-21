@@ -20,4 +20,4 @@ implementaciones) M<sub>1</sub> y M<sub>2</sub>, que tardan T<sub>1</sub>(n) y T
 
 existe una cte. real c > 0 y un n<sub>0</sub> $\in$ N tales que $\forall$ n $\geq$ n<sub>0</sub> se verifica que:
             
-T<sub>1</sub>(n) $\leq$ c * T<sub>2</sub>(n)
+<p align="center">T<sub>1</sub>(n) $\leq$ c * T<sub>2</sub>(n)</p>
