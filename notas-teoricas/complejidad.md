@@ -34,3 +34,9 @@ El objetivo del estudio de la complejidad algorítmica es determinar el comporta
 * $\Omega$ cota inferior.
 * $\Theta$ orden exacto de la función.
 
+**Cota superior**
+* Si para un algoritmo sabemos que T<sub>peor</sub> $\in$ O(g), se puede asegurar que para inputs de tamaño creciente, *en todos los casos* el tiempo será a lo sumo proporcional a la cota.
+* Si para un algoritmo sabemos que T<sub>prom</sub> $\in$ O(g), se puede asegurar que para inputs de tamaño creciente, *en promedio* el tiempo será a lo sumo proporcional a la cota.
+
+**Cota inferior**
+* Si para un algoritmo sabemos que T<sub>peor</sub> $\in$ $\Omega$(g), se puede asegurar que para inputs de tamaño creciente, en el peor caso el tiempo será al menos proporcional a la cota.
