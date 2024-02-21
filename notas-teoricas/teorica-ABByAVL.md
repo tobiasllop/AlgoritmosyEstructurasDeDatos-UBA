@@ -13,7 +13,7 @@ Costo de la inserción en el caso promedio (suponiendo una distribución uniform
   1. Borrar una hoja: Busca al padre y elimina la hoja.
   2. Borrar un nodo u con un solo hijo v:
      Buscar al padre w de u.
-     Si existe w, reemplazar la conexión (w,u) con la conexion (w,v)        3. Borrado de un nodo u con dos hijos:
+     Si existe w, reemplazar la conexión (w,u) con la conexion (w,v)          3. Borrado de un nodo u con dos hijos:
      Encontrar el "predecesor inmediato" v (o sucesor inmediato) de u.
           v no puede tener dos hijos, en caso contrario no sería el                   predecesor inmediato (sucesor).
      Copiar la clave v en lugar de la u.
