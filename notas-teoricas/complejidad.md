@@ -15,8 +15,9 @@ transferencais de control, asignaciones a variables de tipos básicos, etc.
 
 El tiempo de una OE es, por definición 1.
 
-**Principio de Invarianza**:  Dado un algoritmo y dos máquinas (o dos
-implementaciones) M<sub>1</sub> y M<sub>2</sub>, que tardan T<sub>1</sub>(n) y T<sub>2</sub>(n)
-respectivamente sobre inputs de tamaño n, existe una cte. real c > 0 y un n<sub>0</sub> $\in$ N tales que $\forall$ n $\geq$ n<sub>0</sub>
-se verifica que:
-            T<sub>1</sub>(n) $\leq$ c * T<sub>2</sub>(n)
+**Principio de Invarianza**: Dado un algoritmo y dos máquinas (o dos
+implementaciones) M<sub>1</sub> y M<sub>2</sub>, que tardan T<sub>1</sub>(n) y T<sub>2</sub>(n) respectivamente sobre inputs de tamaño n, 
+
+existe una cte. real c > 0 y un n<sub>0</sub> $\in$ N tales que $\forall$ n $\geq$ n<sub>0</sub> se verifica que:
+            
+T<sub>1</sub>(n) $\leq$ c * T<sub>2</sub>(n)
