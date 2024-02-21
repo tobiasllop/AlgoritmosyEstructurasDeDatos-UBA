@@ -15,11 +15,12 @@ Costo de la inserción en el caso promedio (suponiendo una distribución uniform
      Buscar al padre w de u.
      Si existe w, reemplazar la conexión (w,u) con la conexion (w,v).
      ![Imagen 1 hijo](https://github.com/tobiasllop/AlgoritmosyEstructurasDeDatos-UBA/blob/main/notas-teoricas/images/borr_1nodo.png)
-  4. Borrado de un nodo u con dos hijos:
+  3. Borrado de un nodo u con dos hijos:
      Encontrar el "predecesor inmediato" v (o sucesor inmediato) de u.
           v no puede tener dos hijos, en caso contrario no sería el                   predecesor inmediato (sucesor).
      Copiar la clave v en lugar de la u.
-     Borrar el nodo v (v es hojo o bien tiene un solo hijo, lo que nos           lleva a casos anteriores.              
+     Borrar el nodo v (v es hojo o bien tiene un solo hijo, lo que nos           lleva a casos anteriores).
+     ![Imagen 2 hijos](https://github.com/tobiasllop/AlgoritmosyEstructurasDeDatos-UBA/blob/main/notas-teoricas/images/borr2nodos.png)              
 
 
 Costo del borrado de un nodo interno: O(n)
