@@ -22,7 +22,7 @@ parte de un problema
 * **Función de abstracción** : La función de abstracción nos va a indicar, dada una instancia de implementación, a qué instancia del TAD corresponde, a qué instancia del TAD representa, qué instancia del TAD “es su abstracción”. La función de abstracción hace referencia a las variables de estado de la 
 implementación y a los observadores del TAD (porque tiene que vincular unas con otros). Para definirla, se puede suponer que vale el invariante de representación.
 
-#### Memoria Dinámica
+# Memoria Dinámica
 La Memoria Dinamica es el mecanismo a travès del cual los lenguajes imperativos nos proveen de primitivas para almacenar información cuando no sabemos de antemano cuánto espacio necesitamos, o incluso cuando lo sabemos pero la cota superior es muy grande (y por lo tanto la gestión estática de la memoria no resulta adecuada).
 
 Parte de una organización de la memoria dividida en dos partes:
