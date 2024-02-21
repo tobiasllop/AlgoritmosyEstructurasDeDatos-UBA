@@ -21,3 +21,16 @@ implementaciones) M<sub>1</sub> y M<sub>2</sub>, que tardan T<sub>1</sub>(n) y T
 existe una cte. real c > 0 y un n<sub>0</sub> $\in$ N tales que $\forall$ n $\geq$ n<sub>0</sub> se verifica que:
             
 <p align="center">T<sub>1</sub>(n) $\leq$ c * T<sub>2</sub>(n)</p>
+
+Explicación: dos ejecuciones distintas del mismo algoritmo sólo difieren en cuanto a eficiencia en un factor constante para valores de la entradas suficientemente grandes.
+
+El orden (logaritmico, lineal, cuadtatico, exponencial, etc.) de la función T(n), que mide la complejidad temporal de un algoritmo es el que **expresa el comportamiento dominante cuando el tamaño de entrada es grande**.
+
+#### Comportamiento asintótico
+El objetivo del estudio de la complejidad algorítmica es determinar el comportamiento asintótico de un algoritmo.
+
+**Medidas de comportamiento asintótico de la complejidad**:
+* $O$ (O grande) cota superior.
+* $\omega$ cota inferior.
+* $\theta$ orden exacto de la función.
+
