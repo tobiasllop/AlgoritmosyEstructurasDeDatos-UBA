@@ -16,14 +16,10 @@ Se utilizan cuando tenemos un conjunto de datos acotados.
 
 |Representación con listas de arreglos| Representación con arreglos y punteros|
 |--------|-------|
-Eficiente en terminos de tiempo solo si hay pocas claves
-Requiere algoritmos sobre listas
-Mucho mas eficiente en terminos de memoria
-Mucho menos utilizado |  Notar: puede ser muy ineficiente en t´erminos de espacio.
-En especial cuando ∣Σ∣ es grande y n es chico.
-¿Podemos “comprimir” el arreglo? ¿Y qu´e pasa con la
-complejidad?
-En el peor caso se multiplica por k.
+Eficiente en terminos de tiempo solo si hay pocas claves |  Notar: puede ser muy ineficiente en terminos de espacio. En especial cuando ∣Σ∣ es grande y n es chico.|
+|Requiere algoritmos sobre listas|   | 
+|Mucho mas eficiente en terminos de memoria | Complejidad: En el peor caso se multiplica por k.
+|Mucho menos utilizado| |
 ## Tablas de hash
 * Son la generalización de los diccionarios al concepto de arreglos.
 * Importantes para el acceso de datos en memoria secundaria
