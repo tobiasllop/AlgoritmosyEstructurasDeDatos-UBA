@@ -12,13 +12,17 @@ Variante: **min heap**
 
 Cumple las mismas condiciones que antes pero cambia el punto 2. ya que cada nodo tiene menor o igual prioridad que sus hijos
 
-## Implementación de heaps
+## Implementación de heaps - Representación con arrays.
 * Cada nodo v es almacenado en la posición p(v)
 
 - Si v es la raiz, entonces p(v) = 0
 - Si v es el hijo izquierdo de u, entonces p(v)=2p(u) + 1
 - Si v es el hijo derecho de u, entonces p(v)=2p(u) + 2
 
+**Heaps sobre Arrays**
+| Ventajas | Desventajas |
+- - - - - - - - - - - - - - 
+| Muy eficientes en términos de espacio y facilidad de navegación | Implementación estática (puede ser necesario duplicar el arreglo (o achicarlo) a medida que se agregan/eliminan elementos.| 
 ## Algoritmos de heaps
 * **Proximo**: el elemento de prioridad máxima está en la posición 0 de un arreglo.
 
