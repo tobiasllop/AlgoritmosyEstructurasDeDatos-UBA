@@ -1,7 +1,7 @@
 # Representación de diccionarios con tries y tablas de hash
 ## Tries
 Esta estructura de datos requiere concentrarse en las claves.
-Vamos a suponer que las claves x pertenecen a un alfabeto$Σ^x$.
+Vamos a suponer que las claves x pertenecen a un alfabeto $Σ^x$.
 Tenemos que pensar que no tienen todas tamaño constante (O(1) para comparar), sino que tienen una longitud ∣x∣.
 Esa longitud puede ser:
 * La longitud propiamente dicha, en caso de strings.
