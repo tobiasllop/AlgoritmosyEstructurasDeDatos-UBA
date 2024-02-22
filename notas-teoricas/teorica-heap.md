@@ -23,7 +23,7 @@ Cumple las mismas condiciones que antes pero cambia el punto 2. ya que cada nodo
 
 | Ventajas | Desventajas |
 | :-----------: | :----------------: |
-| <p>Muy eficientes en términos de espacio</p> <p> facilidad de navegación</p> | Implementación estática (puede ser necesario duplicar el arreglo (o achicarlo) a medida que se agregan/eliminan elementos.| 
+| <p> * Muy eficientes en términos de espacio</p> <p> * Facilidad de navegación</p> | <p> * Implementación estática (puede ser necesario duplicar el arreglo (o achicarlo) a medida que se agregan/eliminan elementos. </p>| 
 
 ## Algoritmos de heaps
 * **Proximo**: el elemento de prioridad máxima está en la posición 0 de un arreglo.
