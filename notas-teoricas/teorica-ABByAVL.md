@@ -28,7 +28,7 @@ Costo del borrado de un nodo interno: O(n)
 ## AVL
 Es un arbol k-ario, i.e cada nodo tiene 0 o k hijos. Además la longitud de dos ramas cualesquiera difiere a lo sumo en una unidad.
 
-**Teo**: Un arbol perfectamente balanceado de n nodos tiene altura $log_2$ n + 1
+**Teo**: Un arbol perfectamente balanceado de n nodos tiene altura log<sub>2</sub> n + 1
 
 Costo de búsqueda/inserción/borrado = O(log n)
 
@@ -40,8 +40,7 @@ nodo difieren en a lo sumo una unidad.
 Los arboles balanceados en altura se llaman **AVL** y cumplen que |FDB| <= 1, para cada nodo.
 
 ## Arboles de fibonacci
-Un árbol de Fibonacci tiene todos los factores de
-balanceo de sus nodos internos ± 1.
+Son árboles AVL con el mínimo numero de nodos (dada la altura). Un árbol de Fibonacci tiene todos los factores de balanceo de sus nodos internos ± 1.
 
 Un árbol de Fibonacci con n nodos tiene altura < 1.44 * log(n +2) – 0.328
 
@@ -64,3 +63,9 @@ sólo en la rama en que ocurrió el borrado, de abajo
 hacia arriba
 3. para cada nodo con factor de balanceo ±2 hay
 que hacer una rotación simple o doble
+
+**Rotaciones en los AVL**
+* RR: inserción en el subárbol derecho de un hijo derecho (del nodo que se desbalancea)
+* LR: inserción en el subárbol izquierdo de un hijo derecho (del nodo que se desbalancea)
+* RL: inserción en el subárbol derecho de un hijo izquierdo (del nodo que se desbalancea)
+* LL: inserción en el subárbol izquierdo de un hijo izquierdo (del nodo que se desbalancea)
