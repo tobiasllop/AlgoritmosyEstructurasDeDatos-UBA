@@ -1,5 +1,5 @@
 ## Colas de prioridad
-* Generalmente la prioridad se expresa con un entero pero puede ser cualquier otro tipo \alpha con un orden asociado.
+* Generalmente la prioridad se expresa con un entero pero puede ser cualquier otro tipo $\alpha$ con un orden asociado.
 * La implementacióm más eficiente de una cola de prioridad es a través de heaps.
   
 ## Heap o max-heap
