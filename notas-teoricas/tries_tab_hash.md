@@ -12,6 +12,18 @@ Además, definimos a k = ∣Σ∣, como la cantidad de símbolos distintos del a
 * Complejidad de insertar clave x : **O(|x|)**
 * Complejidad de buscar clave x: **O(|x|)**
 
+Se utilizan cuando tenemos un conjunto de datos acotados.
+
+|Representación con listas de arreglos| Representación con arreglos y punteros|
+|--------|-------|
+Eficiente en terminos de tiempo solo si hay pocas claves
+Requiere algoritmos sobre listas
+Mucho mas eficiente en terminos de memoria
+Mucho menos utilizado |  Notar: puede ser muy ineficiente en t´erminos de espacio.
+En especial cuando ∣Σ∣ es grande y n es chico.
+¿Podemos “comprimir” el arreglo? ¿Y qu´e pasa con la
+complejidad?
+En el peor caso se multiplica por k.
 ## Tablas de hash
 * Son la generalización de los diccionarios al concepto de arreglos.
 * Importantes para el acceso de datos en memoria secundaria
