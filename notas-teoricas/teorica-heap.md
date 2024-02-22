@@ -20,6 +20,7 @@ Cumple las mismas condiciones que antes pero cambia el punto 2. ya que cada nodo
 - Si v es el hijo derecho de u, entonces p(v)=2p(u) + 2
 
 **Heaps sobre Arrays**
+
 | Ventajas | Desventajas |
 - - - - - - - - - - - - - - 
 | Muy eficientes en términos de espacio y facilidad de navegación | Implementación estática (puede ser necesario duplicar el arreglo (o achicarlo) a medida que se agregan/eliminan elementos.| 
