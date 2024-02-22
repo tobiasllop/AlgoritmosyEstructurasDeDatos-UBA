@@ -22,7 +22,7 @@ Cumple las mismas condiciones que antes pero cambia el punto 2. ya que cada nodo
 **Heaps sobre Arrays**
 
 | Ventajas | Desventajas |
-| - - - - | - - - - |
+| ----------- | ---------------- |
 | Muy eficientes en términos de espacio y facilidad de navegación | Implementación estática (puede ser necesario duplicar el arreglo (o achicarlo) a medida que se agregan/eliminan elementos.| 
 
 ## Algoritmos de heaps
