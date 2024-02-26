@@ -26,9 +26,16 @@ Eficiente en terminos de tiempo solo si hay pocas claves |  Notar: puede ser muy
 * Se asocia a cada valor de la clave un indice de un arreglo
 * Busqueda en tiempo O(1)
 * Desventajas: mucho desperdicio de memoria y solo sirve para claves que son enteros no negativos 
-* Para indexar otro tipo de datos que no sean enteros usamos funciones de hashing. ejemplo: "hola" -> 10011101 -> 157
 
-#### Complejidades
+**Pre Hashing**
+* Para indexar otro tipo de datos que no sean enteros usamos funciones de hashing. ejemplo: "hola" -> 10011101 -> 157
+* Problema: generalmente el universo de claves que no son enteros es muy amplio y es muy difícil almacenar tantos datos. Como consecuencia va a haber claves distintas que al ser "hasheadas" van a pasar a tener la misma "pseudoclave". Este fenomeno se llama colision.
+* Resolucion de colisiones:
+   1. Direccionamiento cerrado o Concatenación: a la i-esima posicion de la tabla se le asocia la lista de los elementos tales que h(k) = i
+   2. Direccionamiento abierto: todos los elementos se guardan en la tabla
+* Requisitos de una funcion hash: Se quiere que los elementos se distribuyan en el arreglo de manera uniforme. i.e: P(k) = 1/|K|. Donde P(k) es la probabilidad de la clave k.
+
+#### Complejidades en Concatenacion
 * insert(el, k): inserción al principio de la lista
 asociada a la posición h(k): costo O(1)
 * buscar(k): búsqueda linear en la lista
