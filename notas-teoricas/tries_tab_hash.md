@@ -57,7 +57,7 @@ asociada a h(k))
 **Barrido**
 * La función h(k,i) debe recorrer todas las posiciones de la tabla.
 * Varias formas tipicas para la función h(k,i)
-  1. Barrido Linear.
+  1. Barrido Linear. h(k,i) = (h'(k) + i) mod |T|. Donde h'(k) es una funcion de hashing.
   2. Barrido Cuadratico. h(k,i) = (h'(k) + c<sub>1</sub>^i + c<sub>2</sub>^(i^2)) mod |T| donde h'(k) es una función de hashing, c1 y c2 son constantes.
   3. Hashing Doble. h(k,i) = (h<sub>1</sub>(k) + ih<sub>2</sub>(k)) mod |T| donde h<sub>1</sub>(k) y h<sub>2</sub>(k) son funciones de hashing. El Hashing doble reduce los fenomenos de aglomeracion secundaria y no tiene aglomeracion primaria.
 
