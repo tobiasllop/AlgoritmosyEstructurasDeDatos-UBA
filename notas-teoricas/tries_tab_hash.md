@@ -44,3 +44,25 @@ de la lista asociada a h(k))
 * delete(k): búsqueda en la lista asociada a la
 posición h(k): costo O(longitud de la lista
 asociada a h(k))
+
+#### Direccionamiento abierto
+* Todos los elementos se almacenan en la tabla
+* Las colisiones se resuelven dentro de la tabla:
+  1. Si la posición calculada esta ocupada, hay que buscar una posición libre.
+  2. Los distintos métodos con direccionamiento abierto se distinguen por el método de barrido que utilizan.
+  3. La función hash pasa a depender también del número de intentos realizados.
+  4. Dirección=h(k,i) para el i-esimo intento.
+  5. h(k,i) debe generar todas las posiciones de T
+
+**Barrido**
+* La función h(k,i) debe recorrer todas las posiciones de la tabla.
+* Varias formas tipicas para la función h(k,i)
+  1. Barrido Linear.
+  2. Barrido Cuadratico. h(k,i) = (h'(k) + c<sub>1<\sub>^i + c<sub>2<\sub>^i^2) mod |T| donde h'(k) es una función de hashing, c1 y c2 son constantes.
+  3. Hashing Doble. h(k,i) = (h<sub>1<\sub>(k) + ih<sub>2<\sub>(k)) mod |T| donde h<sub>1<\sub>(k) y h<sub>2<\sub>(k) son funciones de hashing. El Hashing doble reduce los fenomenos de aglomeracion secundaria y no tiene aglomeracion primaria.
+
+**Metodos de funciones hash**
+* Division
+* Particion
+* Mid-square
+* Extraccion
