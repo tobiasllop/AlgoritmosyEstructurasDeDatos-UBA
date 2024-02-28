@@ -8,3 +8,5 @@
 | **Heap Sort**   |  Arma el Heap en O(n) y va sacando los elementos ordenados pagando O(log n). | O(n log n)   | No|
 
 * **Estabilidad**: Decimos que un algoritmo es estable si mantiene el orden anterior de elementos con igual clave.
+
+* Corolario: ningún algoritmo de ordenamiento tiene complejidad mejor que O(n log n).
