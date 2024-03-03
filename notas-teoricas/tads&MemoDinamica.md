@@ -12,6 +12,9 @@ parte de un problema
 
 **Igualdad Observacional**: Para determinar si dos instancias de un TAD son iguales, alcanza con que todos sus observadores sean iguales. En este ejemplo, si dos puntos tienen las mismas coordenadas x y y, entonces son el mismo punto.
 
+* Un TAD es correcto respecto de su especificación si para cada operación demostramos que respeta el invariante y cumple la pre y post condicion del TAD.
+
+
 #### Diseño de Tads
 * **Transparencia Referencial**: Una funcion es **referencialmente transparente** si su resultado solo depende de sus parametros explìcitos. Ej: f(x) : = {return x + 1}, f(4) + f(3) es r.t.
 * **Aliasing**: signigica la posibilidad de tener más de un nombre para la misma cosa. En concreto, dos punteros o referencias al mismo objeto. 
