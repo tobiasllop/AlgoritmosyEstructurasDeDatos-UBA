@@ -28,6 +28,11 @@ condiciones necesarias para que E este definida.
 
 ▶ wp(S, Q) ∨ wp(S, R) ⇒ wp(S, Q ∨ R).
 
+* **Excluded Miracle**
+
+▶ wp(S, false) = false
+
+
 #### Axiomas
 * **Axioma 1** (Asignación) : Dado un programa S: x:= E, 
   Ax1 = wp(S,Q) = def(x=E) ^<sub>L</sub> Q<sub>E</sub><sup>x</sup>
