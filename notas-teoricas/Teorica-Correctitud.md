@@ -22,6 +22,10 @@ condiciones necesarias para que E este definida.
                          Q ⇒ wp(S2, R), e
                          entonces:  P ⇒ wp(S1; S2, R).
 
+* **Propiedad de la Distributividad**
+▶ wp(S, Q) ∧ wp(S, R) ⇒ wp(S, Q ∧ R),
+▶ wp(S, Q) ∨ wp(S, R) ⇒ wp(S, Q ∨ R).
+
 #### Axiomas
 * **Axioma 1** (Asignación) : Dado un programa S: x:= E, 
   Ax1 = wp(S,Q) = def(x=E) ^<sub>L</sub> Q<sub>E</sub><sup>x</sup>
