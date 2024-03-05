@@ -26,6 +26,6 @@
   rotaciones
 
   #### Splaying
-  * Si accedemos a la raíz del árbol, no hacemos nada.
- * Si accedemos a k, y el padre de k es la raíz, hacemos una rotación simple.
- * Si accedemos a k, y el padre de k no es la raíz, hay dos casos posibles (y sus especulares): rotación zig-zag, y rotación zig-zig.
+* Si accedemos a la raíz del árbol, no hacemos nada.
+* Si accedemos a k, y el padre de k es la raíz, hacemos una rotación simple.
+* Si accedemos a k, y el padre de k no es la raíz, hay dos casos posibles (y sus especulares): rotación zig-zag, y rotación zig-zig.
